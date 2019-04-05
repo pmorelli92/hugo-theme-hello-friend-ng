@@ -27,7 +27,7 @@
     <h3>Say something</h3>
 
     <form class="post-new-comment" method="POST" action="https://dev.staticman.net/v3/entry/github/pmorelli92/devandchill/master/comments">
-      <input type="hidden" name="options[redirect]" value="{{ .Permalink }}">
+      <input type="hidden" name="options[redirect]" value="{{ .Permalink | absURL }}">
       <input type="hidden" name="options[entryId]" value="{{ .UniqueID }}">
       <input name="fields[name]" type="text" class="post-comment-field" placeholder="Your name">
       <input name="fields[email]" type="email" class="post-comment-field" placeholder="Your email address for Gravatar (Optional)">
