@@ -85,10 +85,6 @@
             </div>
         {{ end }}
 
-        {{ if .Params.comments }}
-          <div id="comments" class="thin">
-                {{- partial "comments.html" . -}}
-            </div>
-        {{ end }}
+        {{ partial "post-comments" . }}
     </main>
 {{ end }}
