@@ -1,9 +1,8 @@
 {{ define "main" }}
     <div id="home-center">
-        <h1 id="home-title">{{ .Site.Title }}</h1>
 
-        {{- with .Site.Params.homeSubtitle }}
-            <p id="home-subtitle">{{.}}</p>
+        {{- with .Site.Params.logoForIndex }}
+            <img class="indexLogo" src="{{ $.Site.Params.logoForIndex }}" alt="" />
         {{- end }}
 
         {{- with .Site.Params.social }}
