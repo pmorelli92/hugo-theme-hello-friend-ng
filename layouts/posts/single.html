@@ -56,9 +56,9 @@
             {{- end }}
         </div>
 
-        {{ if or .NextInSection .PrevInSection }}
+        {{ partial "sharing-sm" . }}
 
-            {{ partial "sharing-sm" . }}
+        {{ if or .NextInSection .PrevInSection }}
 
             <div class="pagination">
                 <div class="pagination__title">
