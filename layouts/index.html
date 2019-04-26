@@ -1,10 +1,8 @@
 {{ define "main" }}
     <main aria-role="main">
         <div>
-            <h1>{{ .Site.Title }}</h1>
-
-            {{- with .Site.Params.homeSubtitle }}
-                <p>{{.}}</p>
+            {{- with .Site.Params.logoForIndex }}
+                <img class="indexLogo" src="{{ $.Site.Params.logoForIndex }}" alt="" />
             {{- end }}
 
             {{- with .Site.Params.social }}
