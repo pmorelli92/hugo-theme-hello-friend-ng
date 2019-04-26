@@ -1,6 +1,7 @@
 .menu {
   background: #fafafa;
   margin-right: 18px;
+  z-index: 9999;
 
   .dark-theme & {
     background: #252627;
