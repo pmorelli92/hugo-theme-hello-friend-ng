@@ -15,6 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif;
+  font-display: auto;
   font-size: 1rem;
   line-height: 1.54;
 
@@ -143,6 +144,7 @@ figure {
 
 code {
   font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+  font-display: auto;
   font-feature-settings: normal;
   background: $light-background-secondary;
   padding: 1px 6px;
@@ -193,6 +195,7 @@ blockquote {
   &:before {
     content: '”';
     font-family: Georgia, serif;
+    font-display: auto;
     font-size: 3.875rem;
     position: absolute;
     left: -40px;
