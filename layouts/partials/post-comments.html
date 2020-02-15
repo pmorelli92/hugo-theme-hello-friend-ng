@@ -3,7 +3,7 @@
 
     {{ $comments := readDir "data/comments" }}
     {{ $.Scratch.Add "hasComments" 0 }}
-    {{ $entryId := .UniqueID }}
+    {{ $entryId := now.UnixNano }}
 
     {{ range $comments }}
       {{ if eq .Name $entryId }}
@@ -28,7 +28,7 @@
 
     <form class="post-new-comment" method="POST" action="https://dev.staticman.net/v3/entry/github/pmorelli92/devandchill/master/comments">
       <input type="hidden" name="options[redirect]" value="{{ .Permalink }}">
-      <input type="hidden" name="options[entryId]" value="{{ .UniqueID }}">
+      <input type="hidden" name="options[entryId]" value="{{ now.UnixNano }}">
       <input name="fields[name]" type="text" class="post-comment-field" placeholder="Your name">
       <input name="fields[email]" type="email" class="post-comment-field" placeholder="Your email address for Gravatar (Optional)">
       <textarea name="fields[body]" class="post-comment-field" placeholder="Your message." rows="3"></textarea>
