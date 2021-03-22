@@ -6,7 +6,7 @@
   position: relative;
   padding: 20px;
 
-  @media (prefers-color-scheme: light) {
+  @media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
     background: $dark-background-header;
   }
 

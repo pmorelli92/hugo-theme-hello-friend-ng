@@ -23,7 +23,7 @@ a.button {
   cursor: pointer;
   outline: none;
 
-  @media (prefers-color-scheme: light) {
+  @media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
     background: $dark-background-secondary;
     color: inherit;
   }
@@ -34,7 +34,7 @@ a.button {
     box-shadow: none;
     padding: 8px 18px;
 
-    @media (prefers-color-scheme: light) {
+    @media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
       border-color: $dark-background-secondary;
       color: inherit;
     }
@@ -89,7 +89,7 @@ a.button {
     cursor: pointer;
     outline: none;
 
-    @media (prefers-color-scheme: light) {
+    @media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
       background: $dark-background-secondary;
       color: inherit;
     }
