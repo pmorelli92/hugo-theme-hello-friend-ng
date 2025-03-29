@@ -63,11 +63,6 @@
     type="application/json" title="{{ .Site.Title }}" />
 {{ end }}
 
-<!-- Custom head tags -->
-{{- if templates.Exists "partials/extra-head.html" -}}
-    {{ partial "extra-head.html" . }}
-{{- end }}
-
 <!-- Google Analytics internal template -->
 {{- if .Site.Config.Services.GoogleAnalytics.ID }}
     {{ template "_internal/google_analytics.html" . }}
